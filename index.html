@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html>
+    <a href="http://www.nrpdfutils.com.s3-website.us-east-2.amazonaws.com/" >
+        <img src="logos/nr2.png" alt="Nimble Robotics" style="width:50px;height:50px;">
+    </a> 
+    <head>
+        <title>NR pdf Utils </title>
+    </head>
+    <center>
+        <body>
+            <h1>PDF file to images</h1>
+            <p>Please upload one pdf file, all the pages in the pdf will be returned as a zip folder containing images</p>
+            <form action="/action_page.php">
+                <label for="pdf_input">Select pdf file:</label>
+                <input type="file" id="pdf" name="pdf_input" accept="pdf/*">
+                <input type="submit">
+            </form> 
+            
+            <h1>Images to pdf file</h1>
+            <p> upload a zip folder with images, pdf file will be returned</p>
+            <form action="/action_page.php">
+                <label for="zip_input">Select zip file:</label>
+                <input type="file" id="pdf" name="zip_input" accept="zip/*">
+                <input type="submit">
+            </form>
+            
+            <!-- <form action="/action_page.php">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="John"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                <input type="submit" value="Submit">
+            </form>  -->
+
+        </body>
+    </center>
+</html>
+
