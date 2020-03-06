@@ -1,7 +1,7 @@
 name: "Test"
 on:
   push:
-    branches: [ .* ]
+    branches: [ .*,master,test_actions,test_workflow1 ]
   pull_request:
     branches: [ .* ]
 jobs:
