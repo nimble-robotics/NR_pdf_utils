@@ -11,5 +11,5 @@ jobs:
     - name: "Send Request 1"
       uses: kunihiko-t/review-request-action@v0.1.3
       with:
-        repo-token: ${{ secrets.TOKEN }}
+        repo-token: ${{ secrets.repo-token }}
         reviewers: "nimble-robotics"
