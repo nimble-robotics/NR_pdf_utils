@@ -2,8 +2,6 @@ name: "Test"
 on:
   push:
     branches: [ .*,master,test_actions,test_workflow1 ]
-  pull_request:
-    branches: [ .* ]
 jobs:
   test:
     runs-on: ubuntu-latest
