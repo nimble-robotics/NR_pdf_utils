@@ -1,7 +1,7 @@
 name: Assign reviewers based on assignees
 on:
-  push:
-    branches: [test_actions]
+  pull_request:
+    branches: [test_actions,master]
     types: [assigned, unassigned]
 
 jobs:
