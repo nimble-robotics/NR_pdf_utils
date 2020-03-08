@@ -1,7 +1,7 @@
 from flask import Flask,request,render_template
+from healthcheck import HealthCheck
 # from utils import upload_to_aws,bucket_name
 import os
-from healathcheck import Healathcheck
 
 
 application = app = Flask(__name__,template_folder='templates')
@@ -12,7 +12,7 @@ def home():
     return render_template('index.html')
 
 
-health = Healathcheck(app,"/healthcheck")
+health = HealthCheck(app,"/healthcheck")
 health.add_check(app_status)
 
 
