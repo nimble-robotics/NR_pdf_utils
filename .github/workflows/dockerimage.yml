@@ -26,4 +26,4 @@ jobs:
         TS: ${{github.run_number}}
       run: docker build . --file Dockerfile --tag nimblerobotics/nrpdfutils:$TS
     - name: Push docker image to dockerhub
-      run: docker push nimblerobotics/nrpdfutils:$($TS +%s)
+      run: docker push nimblerobotics/nrpdfutils:$TS
