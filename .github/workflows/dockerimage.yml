@@ -13,7 +13,7 @@ jobs:
 
     runs-on: ubuntu-latest
     env:
-        TS = "${{(date +%s)}}"
+        TS: (date +%s)
     steps:
       
     - uses: actions/checkout@v2
