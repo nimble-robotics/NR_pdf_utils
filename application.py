@@ -1,6 +1,6 @@
 from flask import Flask,request,render_template
-from healthcheck import HealthCheck
 # from utils import upload_to_aws,bucket_name
+from healthcheck import HealthCheck
 import os
 
 
