@@ -1,5 +1,5 @@
 name: Docker Image CI
-  TS = $(date +%s)
+
 
 on:
   push:
@@ -12,8 +12,10 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    env:
+        TS = "${{(date +%s)}}"
     steps:
+      
     - uses: actions/checkout@v2
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag nrpdfutils:$TS
