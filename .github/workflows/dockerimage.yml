@@ -22,8 +22,6 @@ jobs:
     - name: DockerLogin
       run: docker login -u=${{ secrets.DOCKER_USER }} -p=${{ secrets.DOCKER_PASS }}
     - name: Build the Docker image
-      env:
-        TS: ${{github.run_number}}
-      run: docker build . --file Dockerfile --tag nimblerobotics/nrpdfutils:$TS
+      run: docker build . --file Dockerfile --tag nimblerobotics/nrpdfutils:${{github.run_number}}
     - name: Push docker image to dockerhub
-      run: docker push nimblerobotics/nrpdfutils:$TS
+      run: docker push nimblerobotics/nrpdfutils:${{github.run_number}}
